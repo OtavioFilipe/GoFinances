@@ -17,7 +17,7 @@ import {
   Transactions,
   Title,
   TransactionList
-} from "./style";
+} from "./styles";
 
 export interface DataListProps extends TransactionCardProps {
   id: string;
