@@ -39,6 +39,8 @@ export const  UserInfo = styled.View`
     align-items: center;
 `;
 
+export const LogoutButton = styled.TouchableOpacity``
+
 export const  Photo = styled.Image`
     width: ${RFValue(48)}px;
     height: ${RFValue(48)}px;
