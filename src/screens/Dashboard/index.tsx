@@ -66,7 +66,7 @@ export function Dashboard() {
   ];
 
   return (
-    <GestureHandlerRootView style={{ flex: 2 }}>
+    <GestureHandlerRootView style={{ flex: 1 }}>
       <Container>
         <Header>
           <UserWrapper>
