@@ -108,7 +108,7 @@ export function Register() {
   },[])
 
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
+    <GestureHandlerRootView style={{ flex: 2 }}>
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <Container>
         <Header>
