@@ -26,6 +26,7 @@ import {
   Fields,
   TransactionsTypes,
 } from "./styles";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 interface FormData {
   name: string;
@@ -107,6 +108,7 @@ export function Register() {
   },[])
 
   return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <Container>
         <Header>
@@ -152,7 +154,9 @@ export function Register() {
             />
           </Fields>
 
-          <Button title="Enviar" onPress={handleSubmit(handleRegister)} />
+          <Button 
+          title="Enviar" 
+          onPress={handleSubmit(handleRegister)} />
         </Form>
 
         <Modal visible={categoryModalOpen}>
@@ -164,5 +168,6 @@ export function Register() {
         </Modal>
       </Container>
     </TouchableWithoutFeedback>
+    </GestureHandlerRootView>
   );
 }
